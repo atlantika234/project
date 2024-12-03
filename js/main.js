@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (entries.length === 0) {
 		const noEntriesMessage = document.createElement("p");
 		noEntriesMessage.classList.add("no-entries-message");
-		noEntriesMessage.textContent = "На жаль, ви ще не зробили жодної запису.";
+		noEntriesMessage.textContent = "На жаль, ви ще не зробили жодного запису.";
 		entriesList.appendChild(noEntriesMessage);
 	} else {
 		const latestEntries = entries.slice().reverse().slice(0, 3);
