@@ -65,25 +65,22 @@
   function initMap() {
     const mapOptions = {
       center:  { lat: 49.40655454711326, lng: 32.055395423284715 },
-      zoom: 16,  // Уровень масштабирования
+      zoom: 16, 
       mapTypeId: 'roadmap'
     };
 
     const map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-    // Добавление маркера на карту
     const marker = new google.maps.Marker({
-      position: { lat: 49.40655454711326, lng: 32.055395423284715 },  // Координаты Черкасс
+      position: { lat: 49.40655454711326, lng: 32.055395423284715 }, 
       map: map,
       title: "Черкаський державний бізнес коледж"
     });
 
-    // Создание информационного окна
     const infoWindow = new google.maps.InfoWindow({
       content: "<h3>Черкаський державний бізнес коледж</h3>"
     });
 
-    // Открытие информационного окна при клике на маркер
     marker.addListener("click", function () {
       infoWindow.open(map, marker);
     });

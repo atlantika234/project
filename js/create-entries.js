@@ -4,7 +4,7 @@ document.getElementById("entry-form").addEventListener("submit", (e) => {
 	const entryTitle = document.getElementById("entry-title").value;
 	const entryText = document.getElementById("entry-text").value;
 	const mood = document.getElementById("mood").value;
-
+	
 	const entry = {
 			title: entryTitle,
 			text: entryText,
